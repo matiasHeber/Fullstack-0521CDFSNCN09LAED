@@ -1,0 +1,1 @@
+Para crear un repositorio local uso -> git init
