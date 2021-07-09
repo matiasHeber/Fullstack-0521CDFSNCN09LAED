@@ -1,0 +1,28 @@
+.contenedor{
+    border: 3px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    flex-wrap: wrap;
+}
+
+
+.caja{
+    /* display: block */
+    width: 30%;
+    height: 200px;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 400px){
+    .contenedor{
+        flex-direction: column;
+        width: 100%;
+    }
+}

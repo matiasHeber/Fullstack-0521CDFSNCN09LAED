@@ -1,0 +1,25 @@
+h1 {
+    background-color: black;
+    color: white;
+}
+
+.fondo-azul {
+    background-color: lightblue;
+}
+
+p {
+    color: orange;
+}
+
+#p-medio {
+    background-color: lightseagreen;
+}
+
+.texto-rojo {
+    color: red;
+}
+
+.resaltar {
+    font-weight: bold;
+    background-color: #EAC926;
+}
