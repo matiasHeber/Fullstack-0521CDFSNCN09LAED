@@ -175,6 +175,42 @@ article div.main-article {
     padding: 15px;
 }
 
+/**FOOTER*/
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer section div {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    width: 30%;
+}
+
+/* Cuando paso el cursor por el DIV, debo cambiar el color del ICONO */
+
+footer section div h3 {
+    margin-bottom: 0px;
+}
+
+footer section div p {
+    margin-top: 0px;
+}
+
+.icono-footer {
+    color: #1259c3;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.Copyright {
+    text-align: left;
+}
+
+/**FOOTER*/
+
 @media (min-width: 361px) {
     main section article .description {
         display: block;
@@ -210,18 +246,31 @@ article div.main-article {
 
     main section div.products article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        transition: linear 1s ease;
+
     }
-    
+
     main section article .description {
         display: none;
     }
-    
+
     main section article:hover .description {
         display: block;
-        transition: linear 1s ease;
+
     }
 
+    main.login input.submit,
+    main.register input.submit {
+        padding: 10px;
+        color: lightgrey;
+        background-color: white;
+        border-radius: 50%;
+
+    }
+
+    main.login input.submit:hover,
+    main.register input.submit:hover {
+        background-color: #0022AA;
+    }
 }
 
 @media (min-width: 1080px) {
