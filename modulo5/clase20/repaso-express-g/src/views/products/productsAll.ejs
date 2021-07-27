@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/<%= css %>.css' />
+  </head>
+  <body>
+
+    <%- include('../partials/header') %> 
+
+    <h1><%= title %></h1>
+
+    <% listado.forEach(product => { %>
+      <h3>Este producto es un <%= product %> </h3>
+    <%  });  %>
+
+    
+    <%- include('../partials/footer') %>
+
+  </body>
+</html>
