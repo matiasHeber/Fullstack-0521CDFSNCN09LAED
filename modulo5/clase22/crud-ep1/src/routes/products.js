@@ -6,7 +6,7 @@ const router = express.Router();
 const productsController = require('../controllers/productsController');
 
 /*** GET ALL PRODUCTS ***/ 
-// router.???('/', productsController.index); 
+router.get('/', productsController.index); 
 
 /*** CREATE ONE PRODUCT ***/ 
 // router.???('/???/', productsController.create); 

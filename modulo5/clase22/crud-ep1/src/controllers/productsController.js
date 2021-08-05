@@ -16,6 +16,7 @@ const controller = {
 	// Root - Show all products
 	index: (req, res) => {
 		// Do the magic
+		res.render('products', {products})
 	},
 
 	// Detail - Detail from one product
@@ -57,12 +58,19 @@ const controller = {
 			}
 		})
 
-		res.redirect('/products/detail/'+id);
+		fs.writeFileSync(productsFilePath, JSON.stringify(products));
+		res.redirect('/');
 	},
 
 	// Delete - Delete one product from DB
 	destroy : (req, res) => {
 		// Do the magic
+
+		/* 
+		1) recupero todos los productos
+		2) filtro o quito de la colección el producto con el id que me llega como parametro
+		3) vuelvo a escribir el JSON con los nuevos datos (sin el producto que debia quitar)
+		*/
 	}
 };
 

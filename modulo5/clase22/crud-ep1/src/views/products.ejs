@@ -13,7 +13,7 @@
 			<div class="col-12">
 				<h2 class="products-title">Todos los productos</h2>
 			</div>
-		
+		<% for( let i = 0; i < products.length; i++ ) { %>
 			<div class="col-12 col-sm-6 col-lg-3">
 				<section class="product-box">
 					<a href="/products/detail/¿?">
@@ -21,7 +21,7 @@
 							<img src="/images/products/¿?" alt="imagen de producto">
 						</figure>
 						<article class="product-box_data">
-							<h2>$FINAL PRICE/h2>
+							<h2>$<%= products[i].price %>  </h2>
 							<span>DISCOUNT% OFF</span>
 							<p>PRODUCT NAMe</p>
 							<i class="fas fa-truck"></i>
@@ -29,6 +29,7 @@
 					</a>
 				</section>
 			</div>
+		<% } %>
 		
 		</div>
 	</div>
