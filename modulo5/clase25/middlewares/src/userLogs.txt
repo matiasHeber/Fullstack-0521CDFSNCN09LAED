@@ -1,0 +1,4 @@
+El usuario ingreso en: /
+El usuario ingreso en: /favicon.ico
+El usuario ingreso en: /admin
+El usuario ingreso en: /admin?user=Ada
