@@ -7,11 +7,23 @@
 // ● Agregar al artículo la clase: “fondoTransparente”.
 // ● Agregar a la sección la clase: “fondoCRUD”.
 
-const h1 = document.querySelector('h1');
-const section = document.getElementById('formulario');
-const article = document.querySelector('article');
 
-h1.innerText += "AGREGAR PELICULAS";
-h1.classList.add('titulo');
-article.classList.add('fondoTransparente');
-section.classList.add('fondoCRUD');
+//OPCION CON .onload
+// window.onload(()=>{
+    
+//OPCION CON .addEventListenter
+window.addEventListener('load', ()=>{
+    
+    const h1 = document.querySelector('h1');
+    const section = document.getElementById('formulario');
+    const article = document.querySelector('article');
+    
+    h1.innerText += "AGREGAR PELICULAS";
+    h1.classList.add('titulo');
+    article.classList.add('fondoTransparente');
+    section.classList.add('fondoCRUD');
+
+
+
+
+})
